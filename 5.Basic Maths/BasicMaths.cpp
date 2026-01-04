@@ -187,9 +187,9 @@
 //     for(int i=1;i<=sqrt(num); i++){   //* or use i*i <= num so it avoids calling sqrt again and again !
 //         if(num%i==0){
 //             v.push_back(i);
-//         }
-//         if(num/i != i){        //? from here we get num/i values like 36,18,12... and use num/i != i so that 6 don't gets prints two times 
-//             v.push_back(num/i);
+//             if(num/i != i){        //? from here we get num/i values like 36,18,12... and use num/i != i so that 6 don't gets prints two times 
+//                 v.push_back(num/i);
+//             }
 //         }
 //     }
 //     sort(v.begin(), v.end());
